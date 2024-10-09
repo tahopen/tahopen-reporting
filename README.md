@@ -1,6 +1,5 @@
-# Pentaho Reporting #
-
-Pentaho Reporting is Java class library for generating reports. It provides
+# Tahopen Reporting #
+Tahopen Reporting is Java class library for generating reports. It provides
 flexible reporting and printing functionality using data from multiple sources
 and supports output to display devices, printers, PDF, Excel, XHTML,
 PlainText, XML and CSV files.
@@ -283,12 +282,6 @@ JIRA system. You will need to create a JIRA login before reporting the bug.
 Access to our JIRA system is free for everyone.
 
   http://jira.pentaho.com/
-
-
-#### Commercial Support
-
-Pentaho offers commercial support for Pentaho Reporting with guaranteed
-response times. Please see
 
   http://www.pentaho.com/products/reporting/
 
