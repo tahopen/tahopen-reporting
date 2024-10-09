@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.tahopen.reporting</groupId>
+    <artifactId>reporting-assemblies</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>prd-ce</artifactId>
+  <version>0.1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Tahopen Report Designer CE Assembly</name>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License, version 2.1</name>
+      <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <properties>
+    <pentaho-mongodb-plugin.version>9.4.0.0-SNAPSHOT</pentaho-mongodb-plugin.version>
+    <pentaho-hadoop-shims.version>9.4.0.0-SNAPSHOT</pentaho-hadoop-shims.version>
+    <assembly_appendId>false</assembly_appendId>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-cda</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-external</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-jdbc</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-table</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-kettle</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-mondrian</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-olap4j</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-pmd</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-reflection</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-scriptable</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>datasource-editor-xpath</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.engine</groupId>
+      <artifactId>classic-extensions-sampledata</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.engine</groupId>
+      <artifactId>classic-extensions-kettle</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.engine</groupId>
+      <artifactId>legacy-functions</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>ext-legacy-charts</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>ext-tahopen</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>ext-wizard</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen.reporting.designer</groupId>
+      <artifactId>ext-toc</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.swt</groupId>
+      <artifactId>swt-linux-x86_64</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse</groupId>
+      <artifactId>jface</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.core</groupId>
+      <artifactId>commands</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.equinox</groupId>
+      <artifactId>common</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-jcl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derbyclient</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>infobright</groupId>
+      <artifactId>infobright-core</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.firebirdsql.jdbc</groupId>
+      <artifactId>jaybird</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.jt400</groupId>
+      <artifactId>jt400</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>luciddb</groupId>
+      <artifactId>LucidDbClient-minimal</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>monetdb</groupId>
+      <artifactId>monetdb-jdbc</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.sap</groupId>
+      <artifactId>sapdbc</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.xerial</groupId>
+      <artifactId>sqlite-jdbc</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>pentaho-kettle</groupId>
+      <artifactId>kettle-engine</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho</groupId>
+      <artifactId>pdi-engine-api</artifactId>
+      <version>9.4.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho</groupId>
+      <artifactId>pentaho-cassandra-plugin-package</artifactId>
+      <version>9.4.0.0-SNAPSHOT</version>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho.di.plugins</groupId>
+      <artifactId>pdi-xml-plugin</artifactId>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho.di.plugins</groupId>
+      <artifactId>kettle-json-plugin</artifactId>
+      <version>9.4.0.0-SNAPSHOT</version>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.pentaho.di.plugins</groupId>
+      <artifactId>mongodb-plugin</artifactId>
+      <version>${pentaho-mongodb-plugin.version}</version>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho.di.plugins</groupId>
+      <artifactId>pentaho-metastore-locator-plugin</artifactId>
+      <version>${pdi.version}</version>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho.di.plugins</groupId>
+      <artifactId>kettle-repository-locator-plugin</artifactId>
+      <version>${pdi.version}</version>
+      <type>zip</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho.di.plugins</groupId>
+      <artifactId>pentaho-metastore-locator-api</artifactId>
+      <version>${pdi.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.pentaho.di.plugins</groupId>
+      <artifactId>pentaho-kettle-repository-locator-api</artifactId>
+      <version>${pdi.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>pentaho</groupId>
+      <artifactId>pdi-dataservice-client-plugin</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>jsonpath</groupId>
+      <artifactId>jsonpath</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-discovery</groupId>
+      <artifactId>commons-discovery</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-application-launcher</artifactId>
+      <version>${project.version}</version>      
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>pentaho</groupId>
+      <artifactId>pentaho-metaverse-api</artifactId>
+      <version>9.4.0.0-SNAPSHOT</version>      
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.paho</groupId>
+      <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>pentaho</groupId>
+      <artifactId>oss-licenses</artifactId>
+      <version>9.4.0.0-SNAPSHOT</version>
+      <type>zip</type>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>unpack-oss</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>unpack</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>pentaho</groupId>
+                    <artifactId>oss-licenses</artifactId>
+                    <type>zip</type>
+                    <overWrite>true</overWrite>
+                    <outputDirectory>${stage.dir.designer}</outputDirectory>
+                    <includes>PentahoReporting_OSS_Licenses.html</includes>
+                  </artifactItem>
+                </artifactItems>
+              </configuration>
+            </execution>
+            <!-- -->
+            <execution>
+              <id>libs</id>
+              <phase>process-resources</phase>
+              <goals>
+                <goal>copy-dependencies</goal>
+              </goals>
+              <configuration>
+                <outputDirectory>${stage.dir.designer}/lib</outputDirectory>
+                <includeTypes>jar</includeTypes>
+                <includeScope>compile</includeScope>
+                <excludeArtifactIds>
+                  derby,derbyclient,h2,jaybird,jt400,LucidDbClient-minimal,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin,pentaho-metastore-locator-core,pentaho-kettle-repository-locator-core
+                </excludeArtifactIds>
+              </configuration>
+            </execution>
+            <execution>
+              <id>drivers</id>
+              <phase>process-resources</phase>
+              <goals>
+                <goal>copy-dependencies</goal>
+              </goals>
+              <configuration>
+                <outputDirectory>${stage.dir.designer}/lib/jdbc</outputDirectory>
+                <includeArtifactIds>
+                  derby,derbyclient,h2,hsqldb,infobright-core,jaybird,jt400,LucidDbClient-minimal,monetdb-jdbc,postgresql,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin
+                </includeArtifactIds>
+              </configuration>
+            </execution>
+            <execution>
+              <id>unpack-plugins</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>unpack-dependencies</goal>
+              </goals>
+              <configuration>
+                <includeArtifactIds>mongodb-plugin,pentaho-cassandra-plugin,pdi-xml-plugin,kettle-json-plugin,pentaho-metastore-locator-plugin,kettle-repository-locator-plugin</includeArtifactIds>
+                <outputDirectory>${stage.dir.designer}/plugins</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>copy-resources</id>
+              <phase>process-resources</phase>
+              <goals>
+                <goal>copy-resources</goal>
+              </goals>
+              <configuration>
+                <outputDirectory>${stage.dir.designer}</outputDirectory>
+                <resources>
+                  <resource>
+                    <directory>${project.basedir}/src/main/resources/resource</directory>
+                  </resource>
+                </resources>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>runtime</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.tahopen</groupId>
+                  <artifactId>tahopen-application-launcher</artifactId>
+                  <overWrite>true</overWrite>
+                  <destFileName>launcher.jar</destFileName>
+                  <outputDirectory>${stage.dir.designer}</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+
+    <profile>
+      <id>osgi</id>
+      <activation>
+        <property>
+          <name>osgi</name>
+        </property>
+      </activation>
+      <properties>
+        <assembly_appendId>true</assembly_appendId>
+      </properties>
+      <dependencies>
+        <dependency>
+          <groupId>org.pentaho</groupId>
+          <artifactId>shim-api-core</artifactId>
+          <version>${pentaho-hadoop-shims.version}</version>
+          <exclusions>
+            <exclusion>
+              <artifactId>*</artifactId>
+              <groupId>*</groupId>
+            </exclusion>
+          </exclusions>
+        </dependency>
+        <dependency>
+          <groupId>org.pentaho</groupId>
+          <artifactId>shim-api</artifactId>
+          <version>${pentaho-hadoop-shims.version}</version>
+          <exclusions>
+            <exclusion>
+              <artifactId>*</artifactId>
+              <groupId>*</groupId>
+            </exclusion>
+          </exclusions>
+        </dependency>
+        <dependency>
+          <groupId>pentaho</groupId>
+          <artifactId>pdi-osgi-bridge-core</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>pentaho</groupId>
+          <artifactId>pentaho-capability-manager</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>pentaho</groupId>
+          <artifactId>pentaho-service-coordinator</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>pentaho</groupId>
+          <artifactId>pentaho-osgi-utils-api</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.core</artifactId>
+          <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+          <groupId>org.apache.karaf</groupId>
+          <artifactId>org.apache.karaf.main</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.karaf.jaas</groupId>
+          <artifactId>org.apache.karaf.jaas.boot</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.karaf.diagnostic</groupId>
+          <artifactId>org.apache.karaf.diagnostic.boot</artifactId>
+          <scope>compile</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.hitachivantara.karaf.assemblies</groupId>
+          <artifactId>prd</artifactId>
+          <type>zip</type>
+          <scope>compile</scope>
+        </dependency>
+      </dependencies>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-dependency-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>unpack-karaf</id>
+                  <phase>generate-resources</phase>
+                  <goals>
+                    <goal>unpack</goal>
+                  </goals>
+                  <configuration>
+                    <artifactItems>
+                      <artifactItem>
+                        <groupId>org.hitachivantara.karaf.assemblies</groupId>
+                        <artifactId>prd</artifactId>
+                        <type>zip</type>
+                        <overWrite>true</overWrite>
+                        <outputDirectory>${stage.dir}/karaf</outputDirectory>
+                      </artifactItem>
+                    </artifactItems>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+              <artifactId>maven-resources-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>copy-karaf</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                    <outputDirectory>${stage.dir.designer}/system/karaf</outputDirectory>
+                    <resources>
+                      <resource>
+                        <directory>${stage.dir}/karaf/</directory>
+                      </resource>
+                    </resources>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>copy-osgi-resources</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>copy-resources</goal>
+                  </goals>
+                  <configuration>
+                    <outputDirectory>${stage.dir.designer}</outputDirectory>
+                    <resources>
+                      <resource>
+                        <directory>${project.basedir}/src/main/resources-standard/resource</directory>
+                      </resource>
+                    </resources>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+
+        <plugins>
+
+          <plugin>
+            <groupId>org.codehaus.gmaven</groupId>
+            <artifactId>groovy-maven-plugin</artifactId>
+            <version>2.1.1</version>
+            <executions>
+              <execution>
+                <id>generate-hadoop-addon</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>execute</goal>
+                </goals>
+                <configuration>
+                  <source>
+                    println( "INFO: generating ${project.artifactId}-${project.version}-hadoop-addon.zip ..." );
+                    //<![CDATA[
+                    import java.util.HashMap;
+                    import java.util.Map;
+                    import java.util.Enumeration;
+                    import java.io.File;
+                    import java.io.IOException;
+                    import java.io.FileInputStream;
+                    import java.io.FileOutputStream;
+                    import java.net.URI;
+                    import java.util.zip.ZipEntry;
+                    import java.util.zip.ZipFile;
+                    import java.util.zip.ZipInputStream;
+                    import java.util.zip.ZipOutputStream;
+                    
+                    import org.apache.commons.io.IOUtils;
+
+                    try {                    
+                      File noOsgiZip = new File( project.build.directory.toString() + "/${project.artifactId}-${project.version}.zip" );
+                      if ( !noOsgiZip.exists() ) {
+                        println("ERROR: " + project.build.directory.toString() + "/${project.artifactId}-${project.version}.zip not found");
+                        throw new RuntimeException( 
+                          "ensure you have not run 'clean' prior to executing this profile and that you've executed the 'default' profile");
+                      }
+                      
+                      File osgiZip = new File( project.build.directory.toString() + "/${project.artifactId}-${project.version}-osgi.zip" );
+                    
+                      int i = 0;
+                      Map<String,Long> noOsgiZipFileChecksumMap = new HashMap<String,Long>();
+                      ZipFile noOsgiZipFile = new ZipFile( noOsgiZip );
+                      Enumeration noOsgiEnum = noOsgiZipFile.entries();
+                      while ( noOsgiEnum.hasMoreElements() ) {
+                        ZipEntry entry = (ZipEntry) noOsgiEnum.nextElement();
+                        noOsgiZipFileChecksumMap.put( entry.getName(), (Long) entry.getCrc() );
+                        i++;
+                      }
+
+                      ZipOutputStream zipOutputStream = 
+                        new ZipOutputStream( 
+                          new FileOutputStream( 
+                            new File( project.build.directory.toString() + "/${project.artifactId}-${project.version}-hadoop-addon.zip" )
+                          )
+                        );
+
+                      int j = 0;
+                      int k = 0;
+                      int l = 0;
+                      boolean copyFile = false;
+                      ZipFile osgiZipFile = new ZipFile( osgiZip );
+                      Enumeration osgiEnum = osgiZipFile.entries();
+                      while ( osgiEnum.hasMoreElements() ) {
+                        ZipEntry entry = (ZipEntry) osgiEnum.nextElement();
+                        String name = entry.getName();
+                        Long crc = entry.getCrc();
+                        if ( !noOsgiZipFileChecksumMap.containsKey(name) ) {
+                          copyFile = true;
+                          k++;
+                        } else if ( !crc.equals( noOsgiZipFileChecksumMap.get(name) ) ) {
+                          println( name + " has different crc" );
+                          copyFile = true;
+                          l++;
+                        }
+                        if ( copyFile ) {
+                          ZipEntry newEntry = new ZipEntry( entry.getName() );
+                          zipOutputStream.putNextEntry( newEntry );
+                          IOUtils.copy( osgiZipFile.getInputStream( entry ), zipOutputStream );
+                          zipOutputStream.closeEntry();
+                        }
+                        copyFile = false;
+                        j++;
+                      }
+
+                      ZipEntry readmeEntry = new ZipEntry( "report-designer/HADOOP_ADDON_README" );
+                      zipOutputStream.putNextEntry( readmeEntry );
+                      IOUtils.copy( new FileInputStream( new File ( project.basedir.toString() + "/src/main/docs/addon.README" ) ), zipOutputStream );
+                      ZipEntry batchFileEntry = new ZipEntry( "report-designer/uninstall-hadoop-addon.bat" );
+                      zipOutputStream.putNextEntry( batchFileEntry );
+                      IOUtils.copy( new FileInputStream( new File ( project.basedir.toString() + "/src/main/resources-addon/uninstall-hadoop-addon.bat" ) ), zipOutputStream );
+                      ZipEntry shellFileEntry = new ZipEntry( "report-designer/uninstall-hadoop-addon.sh" );
+                      zipOutputStream.putNextEntry( shellFileEntry );
+                      IOUtils.copy( new FileInputStream( new File ( project.basedir.toString() + "/src/main/resources-addon/uninstall-hadoop-addon.sh" ) ), zipOutputStream );
+
+                      zipOutputStream.closeEntry();
+                      
+                      println( "osgi: " + j + " files");
+                      println( "noOsgi: " + i + " files" );
+                      println( "missing files: " + k );
+                      println( "changed files: " + l );
+
+                      zipOutputStream.finish();
+                      zipOutputStream.close();
+                      noOsgiZipFile.close();
+                      osgiZipFile.close();
+
+                    } catch( IOException ioe) {
+                      throw new RuntimeException( ioe );
+                    }
+                    //]]>
+                  </source>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>3.3.0</version>
+            <executions>
+              <execution>
+                <id>attach-hadoop-addon-artifact</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                  <goal>attach-artifact</goal>
+                </goals>
+                <configuration>
+                  <artifacts>
+                    <artifact>
+                      <file>${project.build.directory}/${project.artifactId}-${project.version}-hadoop-addon.zip</file>
+                      <type>zip</type>
+                      <classifier>hadoop-addon</classifier>
+                    </artifact>
+                  </artifacts>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+        </plugins>
+      </build>
+    </profile>
+
+  </profiles>
+</project>

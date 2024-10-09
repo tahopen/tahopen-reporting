@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.tahopen.reporting</groupId>
+    <artifactId>tahopen-reporting</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>reporting-assemblies</artifactId>
+  <version>0.1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Tahopen Reporting Assemblies</name>
+
+  <properties>
+    <stage.dir.designer>${stage.dir}/report-designer</stage.dir.designer>
+    <stage.dir>${project.build.directory}/stage</stage.dir>
+  </properties>
+
+  <profiles>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>prd-ce</module>
+        <module>sample-war</module>
+        <module>samples</module>
+        <module>sdk</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>
