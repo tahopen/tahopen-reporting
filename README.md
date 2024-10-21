@@ -21,7 +21,6 @@ There you will find all releases along with the issues fixed for each
 release.
 
 
-
 #### Pre-requisites for building the project:
 * Maven, version 3+
 * Java JDK 11
