@@ -673,8 +673,8 @@
             <groupId>org.tahopen</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>pentaho-cwm</artifactId>
-            <groupId>pentaho</groupId>
+            <artifactId>tahopen-cwm</artifactId>
+            <groupId>org.tahopen</groupId>
           </exclusion>
           <exclusion>
             <artifactId>tahopen-connections</artifactId>
@@ -682,7 +682,7 @@
           </exclusion>
           <exclusion>
             <artifactId>*</artifactId>
-            <groupId>pentaho.kettle</groupId>
+            <groupId>tahopen.kettle</groupId>
           </exclusion>
           <exclusion>
             <artifactId>*</artifactId>

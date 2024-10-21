@@ -7,7 +7,7 @@
     <artifactId>reporting-engine</artifactId>
     <version>0.1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>classic-extensions-mondrian</artifactId>
+  <artifactId>classic-extensions-drianmon</artifactId>
   <version>0.1.0.0-SNAPSHOT</version>
   <licenses>
     <license>
