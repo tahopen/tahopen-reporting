@@ -58,7 +58,7 @@
     </dependency>
     <dependency>
       <groupId>org.tahopen.reporting.designer</groupId>
-      <artifactId>datasource-editor-mondrian</artifactId>
+      <artifactId>datasource-editor-drianmon</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>

@@ -29,7 +29,7 @@
     </dependency>
     <dependency>
       <groupId>org.tahopen.reporting.engine</groupId>
-      <artifactId>classic-extensions-mondrian</artifactId>
+      <artifactId>classic-extensions-drianmon</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
