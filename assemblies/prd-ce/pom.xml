@@ -336,7 +336,7 @@
     <dependency>
       <groupId>org.tahopen</groupId>
       <artifactId>tahopen-application-launcher</artifactId>
-      <version>${project.version}</version>      
+      <version>0.1.0.0</version>      
       <scope>runtime</scope>
     </dependency>
     <dependency>
