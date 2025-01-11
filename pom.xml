@@ -32,14 +32,14 @@
     <groovy.version>2.4.8</groovy.version>
     <mockito.version>1.10.19</mockito.version>
     <powermock.version>1.6.3</powermock.version>
-    <pentaho-cassandra-plugin.version>0.1.0.0-SNAPSHOT</pentaho-cassandra-plugin.version>
-    <pentaho-osgi-bundles.version>0.1.0.0-SNAPSHOT</pentaho-osgi-bundles.version>
+    <pentaho-cassandra-plugin.version>0.1.0.0</pentaho-cassandra-plugin.version>
+    <pentaho-osgi-bundles.version>0.1.0.0</pentaho-osgi-bundles.version>
     <poi.version>4.1.1</poi.version>
     <commons-math3.version>3.6.1</commons-math3.version>
     <curvesapi.version>1.06</curvesapi.version>
     <syslo4j.version>0.9.46</syslo4j.version>
     <jersey.version>1.19.1</jersey.version>
-    <commons-database.version>0.1.0.0-SNAPSHOT</commons-database.version>
+    <commons-database.version>0.1.0.0</commons-database.version>
     <wsdl4j.version>1.6.2</wsdl4j.version>
     <infobright.version>3.4</infobright.version>
     <mstor.version>0.9.13</mstor.version>
@@ -57,29 +57,29 @@
     <snp4j.version>1.9.3d</snp4j.version>
     <barcode4j.version>2.0</barcode4j.version>
     <luciddb.version>0.9.4</luciddb.version>
-    <pdi-osgi-bridge.version>10.1.0.0-SNAPSHOT</pdi-osgi-bridge.version>
+    <pdi-osgi-bridge.version>0.1.0.0</pdi-osgi-bridge.version>
     <antlr.version>3.5.2</antlr.version>
     <sqleonardo.version>2020.02</sqleonardo.version>
     <commons-validator.version>1.3.1</commons-validator.version>
-    <pentaho-metadata.version>0.1.0.0-SNAPSHOT</pentaho-metadata.version>
-    <tahopen.tahopen-versionchecker.version>0.1.0.0-SNAPSHOT</tahopen.tahopen-versionchecker.version>
+    <pentaho-metadata.version>0.1.0.0</pentaho-metadata.version>
+    <tahopen.tahopen-versionchecker.version>0.1.0.0</tahopen.tahopen-versionchecker.version>
     <jsonpath.vesrion>1.0</jsonpath.vesrion>
     <ognl.version>2.6.9</ognl.version>
     <contiperf.version>2.2.0</contiperf.version>
     <feed4j.version>1.0</feed4j.version>
-    <launcher.version>0.1.0.0-SNAPSHOT</launcher.version>
+    <launcher.version>0.1.0.0</launcher.version>
     <swt-linux.version>4.3.2</swt-linux.version>
     <jackcess.version>1.2.6</jackcess.version>
     <swingx.version>1.6.1</swingx.version>
-    <pentaho-karaf.version>10.1.0.0-SNAPSHOT</pentaho-karaf.version>
+    <pentaho-karaf.version>0.1.0.0</pentaho-karaf.version>
     <commons-configuration.version>1.9</commons-configuration.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <joda.version>2.10.2</joda.version>
     <xmlgraphics-commons.version>2.2</xmlgraphics-commons.version>
     <sassy.version>0.5</sassy.version>
-    <platform.version>0.1.0.0-SNAPSHOT</platform.version>
+    <platform.version>0.1.0.0</platform.version>
     <bsf.version>2.4.0</bsf.version>
-    <pentaho-connections.version>0.1.0.0-SNAPSHOT</pentaho-connections.version>
+    <pentaho-connections.version>0.1.0.0</pentaho-connections.version>
     <commons-lang.version>2.6</commons-lang.version>
     <xml-apis-ext.version>1.3.04</xml-apis-ext.version>
     <javax.mail.version>1.6.1</javax.mail.version>
@@ -91,19 +91,19 @@
     <jettyson.version>1.2</jettyson.version>
     <ldapjdk.version>20000524</ldapjdk.version>
     <jcifs.version>1.3.3</jcifs.version>
-    <commons-xul.version>0.1.0.0-SNAPSHOT</commons-xul.version>
-    <big-data-plugin.version>0.1.0.0-SNAPSHOT</big-data-plugin.version>
+    <commons-xul.version>0.1.0.0</commons-xul.version>
+    <big-data-plugin.version>0.1.0.0</big-data-plugin.version>
     <avalon.version>4.1.5</avalon.version>
-    <metastore.version>0.1.0.0-SNAPSHOT</metastore.version>
+    <metastore.version>0.1.0.0</metastore.version>
     <jxl.version>2.6.12</jxl.version>
     <stax.version>1.2.0</stax.version>
     <jug.version>2.0.0</jug.version>
     <rsyntaxtextarea.version>1.3.2</rsyntaxtextarea.version>
     <asm.version>3.2</asm.version>
-    <pdi.version>9.4.0.0-SNAPSHOT</pdi.version>
+    <pdi.version>0.1.0.0</pdi.version>
     <edtftpj.version>2.1.0</edtftpj.version>
     <eclipse.commands.version>3.3.0-I20070605-0010</eclipse.commands.version>
-    <pdi-json-plugin.version>9.4.0.0-SNAPSHOT</pdi-json-plugin.version>
+    <pdi-json-plugin.version>0.1.0.0</pdi-json-plugin.version>
     <license.header.file>license/templates/licenseHeader.txt</license.header.file>
     <hamcrest.version>1.3</hamcrest.version>
     <junit.version>4.11</junit.version>
@@ -114,10 +114,10 @@
     <equinox.version>3.3.0-v20070426</equinox.version>
     <jcommon.version>1.0.16</jcommon.version>
     <javax.ws.rs.version>1.1.1</javax.ws.rs.version>
-    <oss-licenses.version>0.1.0.0-SNAPSHOT</oss-licenses.version>
-    <pdi-dataservice-client-plugin.version>10.1.0.0-SNAPSHOT</pdi-dataservice-client-plugin.version>
-    <mondrian.version>0.1.0.0-SNAPSHOT</mondrian.version>
-    <pdi-xml-plugin.version>9.4.0.0-SNAPSHOT</pdi-xml-plugin.version>
+    <oss-licenses.version>0.1.0.0</oss-licenses.version>
+    <pdi-dataservice-client-plugin.version>0.1.0.0</pdi-dataservice-client-plugin.version>
+    <mondrian.version>0.1.0.0</mondrian.version>
+    <pdi-xml-plugin.version>0.1.0.0</pdi-xml-plugin.version>
     <javacc-maven-plugin.version>2.6</javacc-maven-plugin.version>
     <wsdl4j-qname.version>1.6.1</wsdl4j-qname.version>
     <w3c.version>1.3</w3c.version>
@@ -150,8 +150,8 @@
     <cglib.version>2.2</cglib.version>
     <jt400.version>6.1</jt400.version>
     <test.performance>false</test.performance>
-    <pentaho-metaverse.version>0.1.0.0-SNAPSHOT</pentaho-metaverse.version>
-    <encryption-support.version>9.4.0.0-SNAPSHOT</encryption-support.version>
+    <pentaho-metaverse.version>0.1.0.0</pentaho-metaverse.version>
+    <encryption-support.version>0.1.0.0</encryption-support.version>
     <jakarta-annotation-api.version>1.3.5</jakarta-annotation-api.version>
   </properties>
   <dependencyManagement>
@@ -288,7 +288,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>com.pentaho.sqleonardo</groupId>
+        <groupId>org.tahopen.sqleonardo</groupId>
         <artifactId>sqleonardo</artifactId>
         <version>${sqleonardo.version}</version>
         <exclusions>
@@ -654,8 +654,8 @@
             <groupId>org.tahopen</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>pentaho-publisher</artifactId>
-            <groupId>pentaho</groupId>
+            <groupId>org.tahopen</groupId>
+            <artifactId>tahopen-publisher</artifactId>
           </exclusion>
           <exclusion>
             <artifactId>commons-xul-core</artifactId>
@@ -722,8 +722,8 @@
             <groupId>org.tahopen</groupId>
           </exclusion>
           <exclusion>
+            <groupId>tahopen-kettle</groupId>
             <artifactId>kettle-ui-swt</artifactId>
-            <groupId>pentaho-kettle</groupId>
           </exclusion>
           <exclusion>
             <artifactId>*</artifactId>
@@ -846,7 +846,7 @@
       <dependency>
         <groupId>org.tahopen</groupId>
         <artifactId>simple-jndi</artifactId>
-        <version>0.1.0.0-SNAPSHOT</version>
+        <version>0.1.0.0</version>
         <exclusions>
           <exclusion>
             <artifactId>*</artifactId>
@@ -1226,9 +1226,9 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>pdi-dataservice-client-plugin</artifactId>
-        <version>9.4.0.0-SNAPSHOT</version>
+        <version>0.1.0.0</version>
         <exclusions>
           <exclusion>
             <artifactId>*</artifactId>
@@ -1259,7 +1259,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>oss-licenses</artifactId>
         <version>${oss-licenses.version}</version>
         <type>zip</type>
@@ -1708,9 +1708,9 @@
         <version>${olap4j.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
-        <artifactId>pentaho-metadata</artifactId>
-        <version>9.4.0.0-SNAPSHOT</version>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-metadata</artifactId>
+        <version>0.1.0.0-SNAPSHOT</version>
         <exclusions>
           <exclusion>
             <artifactId>libbase</artifactId>
@@ -2440,9 +2440,9 @@
         <version>${pdi.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
-        <artifactId>pentaho-encryption-support</artifactId>
-        <version>9.4.0.0-SNAPSHOT</version>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-encryption-support</artifactId>
+        <version>0.1.0.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -2475,8 +2475,8 @@
         <version>${kafka-clients.version}</version>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-metaverse-api</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-metaverse-api</artifactId>
         <version>${pentaho-metaverse.version}</version>
       </dependency>
       <dependency>
