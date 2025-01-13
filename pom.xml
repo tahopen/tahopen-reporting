@@ -173,9 +173,10 @@
         <version>${commons-xul.version}</version>
       </dependency>
       <dependency>
-        <groupId>tahopen-kettle</groupId>
+        <groupId>pentaho-kettle</groupId>
         <artifactId>kettle-dbdialog</artifactId>
-        <version>${pdi.version}</version>
+        <version>9.4.0.0-SNAPSHOT</version>
+<!--        <version>${pdi.version}</version>-->
         <exclusions>
           <exclusion>
             <artifactId>*</artifactId>
@@ -1068,7 +1069,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho-kettle</groupId>
+        <groupId>tahopen-kettle</groupId>
         <artifactId>kettle-engine</artifactId>
         <version>${pdi.version}</version>
         <exclusions>
@@ -2442,7 +2443,7 @@
       <dependency>
         <groupId>org.tahopen</groupId>
         <artifactId>tahopen-encryption-support</artifactId>
-        <version>0.1.0.0-SNAPSHOT</version>
+        <version>0.1.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
