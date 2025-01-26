@@ -20,7 +20,7 @@
     </license>
   </licenses>
   <properties>
-    <pentaho-mongodb-plugin.version>9.4.0.0</pentaho-mongodb-plugin.version>
+    <pentaho-mongodb-plugin.version>0.1.0.0</pentaho-mongodb-plugin.version>
     <pentaho-hadoop-shims.version>0.1.0.0</pentaho-hadoop-shims.version>
     <assembly_appendId>false</assembly_appendId>
   </properties>
@@ -243,14 +243,14 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho-kettle</groupId>
+      <groupId>tahopen-kettle</groupId>
       <artifactId>kettle-engine</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
-      <artifactId>pdi-engine-api</artifactId>
-      <version>9.4.0.0-SNAPSHOT</version>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tdi-engine-api</artifactId>
+      <version>${pdi.version}</version>
     </dependency>
     <dependency>
       <groupId>commons-configuration</groupId>
@@ -265,42 +265,42 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
-      <artifactId>pdi-xml-plugin</artifactId>
+      <groupId>org.tahopen.di.plugins</groupId>
+      <artifactId>tdi-xml-plugin</artifactId>
       <type>zip</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
+      <groupId>org.tahopen.di.plugins</groupId>
       <artifactId>kettle-json-plugin</artifactId>
-      <version>9.4.0.0-SNAPSHOT</version>
+      <version>${pdi.version}</version>
       <type>zip</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.pentaho.di.plugins</groupId>
+      <groupId>org.tahopen.di.plugins</groupId>
       <artifactId>mongodb-plugin</artifactId>
       <version>${pentaho-mongodb-plugin.version}</version>
       <type>zip</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
-      <artifactId>pentaho-metastore-locator-plugin</artifactId>
+      <groupId>org.tahopen.di.plugins</groupId>
+      <artifactId>tahopen-metastore-locator-plugin</artifactId>
       <version>${pdi.version}</version>
       <type>zip</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
+      <groupId>org.tahopen.di.plugins</groupId>
       <artifactId>kettle-repository-locator-plugin</artifactId>
       <version>${pdi.version}</version>
       <type>zip</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.di.plugins</groupId>
-      <artifactId>pentaho-metastore-locator-api</artifactId>
+      <groupId>org.tahopen.di.plugins</groupId>
+      <artifactId>tahopen-metastore-locator-api</artifactId>
       <version>${pdi.version}</version>
       <scope>compile</scope>
     </dependency>
@@ -418,7 +418,7 @@
                 <includeTypes>jar</includeTypes>
                 <includeScope>compile</includeScope>
                 <excludeArtifactIds>
-                  derby,derbyclient,h2,jaybird,jt400,LucidDbClient-minimal,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin,pentaho-metastore-locator-core,pentaho-kettle-repository-locator-core
+                  derby,derbyclient,h2,jaybird,jt400,LucidDbClient-minimal,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin,pentaho-metastore-locator-core,tahopen-kettle-repository-locator-core
                 </excludeArtifactIds>
               </configuration>
             </execution>
