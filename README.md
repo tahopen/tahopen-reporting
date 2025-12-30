@@ -9,23 +9,17 @@ and can also be used as standalone desktop reporting tool.
 
 The library is optimized for performance and a small memory footprint and
 can run completely in memory without generating temporary files or requiring
-extra compilation steps. Pentaho Reporting gives the user a great degree of
+extra compilation steps. Tahopen Reporting gives the user a great degree of
 flexibility while designing reports.
 
 This software is free and opensource software available under the
 terms of the GNU Lesser General Public License (LGPL) Version 2.1.
 
-For an up to date list of changes in the releases of Pentaho Reporting,
-please visit the JIRA system at http://jira.pentaho.com/browse/PRD
-There you will find all releases along with the issues fixed for each
-release.
-
-
 
 #### Pre-requisites for building the project:
 * Maven, version 3+
 * Java JDK 11
-* This [settings.xml](https://github.com/pentaho/maven-parent-poms/blob/master/maven-support-files/settings.xml) in your <user-home>/.m2 directory
+* This [settings.xml](https://github.com/tahopen/maven-parent-poms/blob/master/maven-support-files/settings.xml) in your <user-home>/.m2 directory
 
 #### Building it
 
@@ -114,32 +108,32 @@ __IntelliJ__
 #### Available Distributions
 
 
-Pentaho Reporting is a modular system and depending on the feature set you
+Tahopen Reporting is a modular system and depending on the feature set you
 use, you may need a different set of applications or libraries.
 
 
 ##### Web-Based Reporting
 
 If you intend to make reports available over the internet, we recommend to
-use the Pentaho BI-Server/BI-Platform to host your reports. The Pentaho
+use the Tahopen BI-Server/BI-Platform to host your reports. The Tahopen
 BI-Platform is a J2EE-Web-Application that provides all services to run and
 manage reports in a Web-2.0 environment.
 
 
 ##### Standalone Reporting
 
-The Pentaho Report-Designer can be used as a desktop reporting environment.
+The Tahopen Report-Designer can be used as a desktop reporting environment.
 The designer allows you to create and run reports manually and to create all
 supported document types (PDF, HTML, Text, RTF, Excel and CSV-files).
 
 
 ##### Embedded Reporting
 
-The Pentaho Reporting Engine consists of a set of base libraries, the
+The Tahopen Reporting Engine consists of a set of base libraries, the
 reporting engine core and several extension modules, which provide
 additional datasources as well as charting and barcode capabilities.
 
-The Pentaho Reporting Engine ships with a Swing Print Preview dialog, which
+The Tahopen Reporting Engine ships with a Swing Print Preview dialog, which
 can be easily embedded into an existing Java/Swing application. The dialog
 offers access to all supported export file formats.
 
@@ -150,18 +144,18 @@ through the code to get you started more easily.
 #### System Requirements
 
 
-Pentaho Reporting requires a minimum of 192MB of allocated heap-space to
+Tahopen Reporting requires a minimum of 192MB of allocated heap-space to
 process reports. Reports with more than 400 pages or about 50.000 rows of data
 may require additional memory and/or adjustments to the global configuration
 parameters of the reporting engine.
 
-The Pentaho Reporting Engine requires Java 11 or higher. The Pentaho Report
-Designer and Pentaho Report Design Wizard also need at least Java 11 or higher.
+The Tahopen Reporting Engine requires Java 11 or higher. The Tahopen Report
+Designer and Tahopen Report Design Wizard also need at least Java 11 or higher.
 
 ##### Warning:
   
   ```
-  Pentaho Reporting requires a Java Runtime environment that is fully
+  Tahopen Reporting requires a Java Runtime environment that is fully
   compatible to the Java Platform Specification 8.0 (JSR-337). It will
   not run with the GNU GCJ suite of tools.
   ```
@@ -174,7 +168,7 @@ A. Windows
 
    Download the ZIP distribution.
 
-   The Pentaho Report Designer can be extracted into any directory. We
+   The Tahopen Report Designer can be extracted into any directory. We
    recommend that you place the report-designer into
    "C:\Program Files\report-designer" (or an equivalent) directory.
 
@@ -185,7 +179,7 @@ B. Linux/Solaris/Unix
 
    Download either the ZIP or the TAR.GZ distribution.
 
-   The Pentaho Report Designer can be extracted into any directory. We
+   The Tahopen Report Designer can be extracted into any directory. We
    recommend that you place the report-designer into
    "/opt/report-designer" (or an equivalent) directory.
 
@@ -202,7 +196,7 @@ C. MacOS
 
    Download either the ZIP or the TAR.GZ distribution.
 
-   The Pentaho Report Designer can be extracted into any directory.
+   The Tahopen Report Designer can be extracted into any directory.
 
    Start the application by double clicking on the 
 
@@ -215,11 +209,6 @@ C. MacOS
 #### Documentation
 
 
-The Javadoc HTML pages for the latest release of Pentaho Reporting are
-available at
-
-  http://javadoc.pentaho.com/reporting/
-
 
 You can also regenerate the Javadocs directly from the source code. There is
 a task "javadoc" in the Ant script (see below) that makes this relatively
@@ -231,11 +220,8 @@ Java Developers".
 
   https://www.packtpub.com/pentaho-reporting-3-5-for-java-developers/book
 
-Technical articles and general documentation can be found in our Wiki.
 
-  https://pentaho-community.atlassian.net/wiki/display/Reporting/
-
-If you intend to embed Pentaho Reporting in your own applications, the SDK
+If you intend to embed Tahopen Reporting in your own applications, the SDK
 contains a thorough step-by-step guide to the enclosed examples.
 
 
@@ -246,14 +232,14 @@ Our code is split into three groups of modules.
 
 * “/libraries” contains all shared libraries and code that provides
 infrastructure that is not necessarily reporting related.
-* “/engine” contains the runtime code for Pentaho Reporting. If you want to
+* “/engine” contains the runtime code for Tahopen Reporting. If you want to
 embed our reporting engine into your own Swing application or whether you want
 to deploy it as part of a J2EE application, this contains all your ever need.
 * “/designer” contains our design-time tools, like the report-designer and the
 report-design-wizard. It also contains all data source UIs that are used in
-both the Report Designer and Pentaho Report Wizard.
+both the Report Designer and Tahopen Report Wizard.
 
-At Pentaho we use Scrum as our development process. We end up working on a set
+At Tahoprn we use Scrum as our development process. We end up working on a set
 of features for about 3 weeks, called a Sprint. All work for that Sprint goes
 into a feature branch (sprint\_XXX-4.0.0GA) and gets merged with the master at
 the end of the sprint.
@@ -265,11 +251,6 @@ three weeks, stick to the master-branch.
 
 #### Reporting Bugs
 
-
-Free support is available via the Pentaho Reporting forum.
-
-  https://community.hitachivantara.com/s/topic/0TO1J0000017kVRWAY/reporting-analytics/
-
 Please note that questions are answered by volunteers, so there is no
 guaranteed response time or level of service.
 
@@ -280,10 +261,6 @@ can see the answer.
 If you found a bug, please either discuss it in the forum or report it in our
 JIRA system. You will need to create a JIRA login before reporting the bug.
 Access to our JIRA system is free for everyone.
-
-  http://jira.pentaho.com/
-
-  http://www.pentaho.com/products/reporting/
 
 for more details.
 
