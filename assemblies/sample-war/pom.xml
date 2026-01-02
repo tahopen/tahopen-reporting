@@ -5,10 +5,10 @@
   <parent>
     <groupId>org.tahopen.reporting</groupId>
     <artifactId>reporting-assemblies</artifactId>
-    <version>0.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0</version>
   </parent>
   <artifactId>classic-samples-war</artifactId>
-  <version>0.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0</version>
   <packaging>war</packaging>
   <licenses>
     <license>

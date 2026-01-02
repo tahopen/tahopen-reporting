@@ -5,10 +5,10 @@
   <parent>
     <groupId>org.tahopen.reporting.designer</groupId>
     <artifactId>reporting-designer</artifactId>
-    <version>0.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0</version>
   </parent>
   <artifactId>report-designer</artifactId>
-  <version>0.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0</version>
   <licenses>
     <license>
       <name>GNU Lesser General Public License, version 2.1</name>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>org.tahopen</groupId>
       <artifactId>tahopen-versionchecker</artifactId>
-      <version>0.1.0.0-SNAPSHOT</version>    <!-- add tahopen -->       
+      <version>0.1.0.0</version>    <!-- add tahopen -->       
     </dependency>
     <dependency>
       <groupId>org.tahopen</groupId>
