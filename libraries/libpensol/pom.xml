@@ -53,22 +53,22 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-repository</artifactId>
-      <version>9.4.0.0-SNAPSHOT</version>
-      <!-- <scope>compile</scope>-->
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-repository</artifactId>
+      <version>0.1.0.0</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-extensions</artifactId>
-      <version>9.4.0.0-SNAPSHOT</version>
-      <!-- <scope>compile</scope>-->
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-extensions</artifactId>
+      <version>0.1.0.0</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-core</artifactId>
-      <version>9.4.0.0-SNAPSHOT</version>
-      <!-- <scope>compile</scope>-->
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-core</artifactId>
+      <version>0.1.0.0</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>pentaho</groupId>
