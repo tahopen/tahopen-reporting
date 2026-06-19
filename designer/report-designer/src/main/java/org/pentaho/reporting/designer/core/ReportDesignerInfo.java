@@ -50,7 +50,7 @@ public class ReportDesignerInfo extends ProjectInformation {
    * Constructs an object containing information about the JFreeReport project.
    */
   private ReportDesignerInfo() {
-    super( "report-designer", "Pentaho Report Designer" );// NON-NLS
+    super( "report-designer", "Tahopen Report Designer" );// NON-NLS
   }
 
 

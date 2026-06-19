@@ -32,12 +32,13 @@
       <version>${project.version}</version>    <!-- add tahopen -->       
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
-      <artifactId>pentaho-encryption-support</artifactId>
-      <version>9.4.0.0-SNAPSHOT</version>    <!-- add tahopen -->       
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-encryption-support</artifactId>
+      <version>0.1.0.0</version>    <!-- add tahopen -->
       <scope>test</scope>
     </dependency>
-    <dependency>
+  
+  <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>

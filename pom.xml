@@ -19,17 +19,6 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  <!--
-  <scm>
-    <connection>scm:git:git@github.com:pentaho/pentaho-reporting.git</connection>
-    <developerConnection>scm:git:git@github.com:pentaho/pentaho-reporting.git</developerConnection>
-    <url>scm:git:git@github.com:pentaho/pentaho-reporting.git</url>
-  </scm>
-  <issueManagement>
-    <system>JIRA</system>
-    <url>http://jira.pentaho.com/browse/PRD</url>
-  </issueManagement>
-  -->
 
   <properties>
     <bcel.version>5.1</bcel.version>
@@ -82,7 +71,7 @@
     <swt-linux.version>4.3.2</swt-linux.version>
     <jackcess.version>1.2.6</jackcess.version>
     <swingx.version>1.6.1</swingx.version>
-    <pentaho-karaf.version>10.1.0.0-SNAPSHOT</pentaho-karaf.version>
+    <pentaho-karaf.version>0.1.0.0</pentaho-karaf.version>
     <commons-configuration.version>1.9</commons-configuration.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <joda.version>2.10.2</joda.version>
@@ -111,7 +100,7 @@
     <jug.version>2.0.0</jug.version>
     <rsyntaxtextarea.version>1.3.2</rsyntaxtextarea.version>
     <asm.version>3.2</asm.version>
-    <pdi.version>9.4.0.0-SNAPSHOT</pdi.version>
+    <pdi.version>0.1.0.0</pdi.version>
     <edtftpj.version>2.1.0</edtftpj.version>
     <eclipse.commands.version>3.3.0-I20070605-0010</eclipse.commands.version>
     <pdi-json-plugin.version>0.1.0.0</pdi-json-plugin.version>
@@ -128,7 +117,7 @@
     <oss-licenses.version>0.1.0.0</oss-licenses.version>
     <pdi-dataservice-client-plugin.version>0.1.0.0</pdi-dataservice-client-plugin.version>
     <mondrian.version>0.1.0.0</mondrian.version>
-    <pdi-xml-plugin.version>9.4.0.0-SNAPSHOT</pdi-xml-plugin.version>
+    <pdi-xml-plugin.version>0.1.0.0</pdi-xml-plugin.version>
     <javacc-maven-plugin.version>2.6</javacc-maven-plugin.version>
     <wsdl4j-qname.version>1.6.1</wsdl4j-qname.version>
     <w3c.version>1.3</w3c.version>
@@ -734,7 +723,7 @@
           </exclusion>
           <exclusion>
             <artifactId>kettle-ui-swt</artifactId>
-            <groupId>pentaho-kettle</groupId>
+            <groupId>tahopen-kettle</groupId>
           </exclusion>
           <exclusion>
             <artifactId>*</artifactId>
@@ -1079,7 +1068,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho-kettle</groupId>
+        <groupId>tahopen-kettle</groupId>
         <artifactId>kettle-engine</artifactId>
         <version>${pdi.version}</version>
         <exclusions>
@@ -1213,8 +1202,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.di.plugins</groupId>
-        <artifactId>pdi-xml-plugin</artifactId>
+        <groupId>org.tahopen.di.plugins</groupId>
+        <artifactId>tdi-xml-plugin</artifactId>
         <version>${pdi-xml-plugin.version}</version>
         <type>zip</type>
         <exclusions>
@@ -1237,9 +1226,9 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pdi-dataservice-client-plugin</artifactId>
-        <version>9.4.0.0-SNAPSHOT</version>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tdi-dataservice-client-plugin</artifactId>
+        <version>0.1.0.0</version>
         <exclusions>
           <exclusion>
             <artifactId>*</artifactId>
@@ -1269,12 +1258,14 @@
           </exclusion>
         </exclusions>
       </dependency>
+<!--
       <dependency>
         <groupId>pentaho</groupId>
         <artifactId>oss-licenses</artifactId>
         <version>${oss-licenses.version}</version>
         <type>zip</type>
       </dependency>
+-->
       <dependency>
         <groupId>commons-discovery</groupId>
         <artifactId>commons-discovery</artifactId>
@@ -1719,9 +1710,9 @@
         <version>${olap4j.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
-        <artifactId>pentaho-metadata</artifactId>
-        <version>9.4.0.0-SNAPSHOT</version>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-metadata</artifactId>
+        <version>0.1.0.0</version>
         <exclusions>
           <exclusion>
             <artifactId>libbase</artifactId>
@@ -2451,9 +2442,9 @@
         <version>${pdi.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
-        <artifactId>pentaho-encryption-support</artifactId>
-        <version>9.4.0.0-SNAPSHOT</version>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-encryption-support</artifactId>
+        <version>0.1.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
