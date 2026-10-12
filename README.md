@@ -28,7 +28,7 @@ __Build for nightly/release__
 All required profiles for the "with-osgi" or standard build are activated by the presence of a property named "release".
 
 ```
-$ mvn clean install -Drelease
+$ mvn clean install -Drelease -Duser.language=en
 ```
 
 This will build, unit test, and package the whole project (all of the sub-modules). The artifact will be generated in: ```assemblies/prd-ce/target```
