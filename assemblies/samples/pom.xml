@@ -8,7 +8,6 @@
     <version>0.1.0.0</version>
   </parent>
   <artifactId>classic-samples</artifactId>
-  <version>0.1.0.0</version>
   <licenses>
     <license>
       <name>GNU Lesser General Public License, version 2.1</name>
